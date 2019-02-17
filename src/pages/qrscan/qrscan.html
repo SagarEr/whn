@@ -1,0 +1,31 @@
+<!--
+  Generated template for the QrscanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Scan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <ion-card-content>
+            <ion-item>
+                <ion-label floating color="primary">Enter ID Here</ion-label>
+                <ion-input type="text" [(ngModel)]="qid"></ion-input>
+              </ion-item>
+      <button ion-button block type="submit" (click)="qid && sca(qid)">Fetch</button>
+        </ion-card-content>
+      
+      </ion-card>
+      <div>
+          <h2>Don't Have ID? <a (click)="scancode()">click here</a> to try QRcode Scanning</h2>
+         </div>
+
+</ion-content>

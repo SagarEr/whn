@@ -1,0 +1,42 @@
+<!--
+  Generated template for the DetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+</ion-content><ion-content padding>
+  <div class="user-image-content">
+    <ion-row no-padding class="user-image-row">
+      <ion-col no-padding col-6 offset-3>
+        <img [src]="image" (click)="showimage(image)" alt="this is the image"/>
+      </ion-col>
+    </ion-row>
+  </div>
+ <ion-item>
+      <ion-label >Name : {{name}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >Phone No. : {{phoneno}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >Hospital Name : {{hospitalname}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >Diseases : {{diseases}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label >Doc Name : {{docname}}</ion-label>
+    </ion-item>
+</ion-content>
+

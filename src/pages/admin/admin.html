@@ -1,0 +1,33 @@
+<!-- <ion-header>
+  <ion-navbar [hideBackButton]="true" color="primary">
+    <ion-title  style="text-align:center">Login</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="form-content">
+  <h2 style="text-align: center">Women Helpline</h2>
+<div>
+  <img src="assets/imgs/logo.png" class="d-flex justify-content-center img" style="height: 180px;width: 180px" >
+</div>
+<div >
+<form class="form">
+
+  <ion-item>
+    <ion-label floating color="primary" >Email</ion-label>
+    <ion-input type="email" name='t' [(ngModel)]="t"></ion-input>
+  </ion-item>
+  
+
+  <ion-item>
+    <ion-label floating color="primary">Password</ion-label>
+    <ion-input type="password" name='p' [(ngModel)]="p" class="form-controll" required></ion-input>
+  </ion-item>
+  
+
+  <button class="submit-btn" ion-button block type="submit" (click)="gotoComplete()" >Log In</button>
+  
+</form>
+
+
+    </div>
+</ion-content>
